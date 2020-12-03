@@ -44,6 +44,12 @@ public class LoginServlet extends HttpServlet {
 		
 		// JSP - Java Server Pages 
 		
+		/*
+		 * String username = request.getParameter("username");
+		 * 
+		 * request.setAttribute("user", username);
+		 */
+		
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 
 	}

@@ -19,16 +19,14 @@ public class HelloServlet extends HttpServlet {
 		
 		String param = request.getParameter("name");
 		
-		String param2 = request.getParameter("country");
-		
-		System.out.println(param);
-		
-		System.out.println(param2);
+		request.setAttribute("name", param);
 		
 		
-		PrintWriter writer = response.getWriter();
 		
-		writer.println("Hello World");
+	
+		request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+		
+		
 		
 	}
 
