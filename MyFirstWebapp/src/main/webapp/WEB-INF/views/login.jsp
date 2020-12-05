@@ -12,6 +12,8 @@
 
 <form action="/hello" method="POST">
 
+   ${message}
+
 Name : <input type="text" name="name"/>
 
 <br/>
