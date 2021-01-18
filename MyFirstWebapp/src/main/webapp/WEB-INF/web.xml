@@ -4,5 +4,35 @@
   <welcome-file-list>
     <welcome-file>hello</welcome-file>
   </welcome-file-list>
+  
+  
+  <context-param>
+  
+  <param-name>commonName</param-name>
+  <param-value>commonValue</param-value>
+  
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>hello</servlet-name>
+  	<servlet-class>com.suman.myapp.HelloServlet</servlet-class>
+  	
+  	<init-param>
+  		<param-name>websitename</param-name>
+  		<param-value>learn.com</param-value>
+  	</init-param>
+  
+  	
+  	
+  </servlet>
+  
+  <servlet-mapping>
+  
+  <servlet-name>hello</servlet-name>
+  <url-pattern>/hello.do</url-pattern>
+  
+  </servlet-mapping>
+  
+  
  
 </web-app>
