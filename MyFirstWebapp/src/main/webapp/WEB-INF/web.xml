@@ -6,7 +6,7 @@
   </welcome-file-list>
   
   
-  <context-param>
+  <!-- <context-param>
   
   <param-name>commonName</param-name>
   <param-value>commonValue</param-value>
@@ -32,7 +32,28 @@
   <url-pattern>/hello.do</url-pattern>
   
   </servlet-mapping>
+   -->
+   
+   <servlet>
+   	<servlet-name>dispatcher</servlet-name>
+   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+   	
+   	
+   	<init-param>
+   	
+   	 <param-name>contextConfigLocation</param-name>
+   	 <param-value>/WEB-INF/todo-servlet.xml</param-value>
+   	
+   	</init-param>
+   	
+   	  <load-on-startup>1</load-on-startup>
+   
+   </servlet>
+   
+  <servlet-mapping>
+   <servlet-name>dispatcher</servlet-name>
+   <url-pattern>/spring-mvc/*</url-pattern>
   
-  
+  </servlet-mapping>
  
 </web-app>
