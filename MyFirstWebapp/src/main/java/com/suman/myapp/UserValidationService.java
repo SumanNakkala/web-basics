@@ -1,5 +1,8 @@
 package com.suman.myapp;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class UserValidationService {
 	
 	

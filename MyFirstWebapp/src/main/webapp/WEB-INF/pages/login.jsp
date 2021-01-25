@@ -10,9 +10,11 @@
 <h1> LOGIN SERVLET..!!</h1>
 
 
-<form action="/hello" method="POST">
+<form action="/spring-mvc/login" method="POST">
 
-   ${message}
+   ${errorMessage}
+   
+   <br/>
 
 Name : <input type="text" name="name"/>
 
@@ -25,6 +27,6 @@ PAssword : <input type ="password" name ="password"/>
 </form>
 
 
-Hello welcome ${user}
+
 </body>
 </html>
